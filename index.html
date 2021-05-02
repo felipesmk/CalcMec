@@ -6,10 +6,10 @@
     </head>
     <Body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
             <form id="frm">
-                <div class="row-sm">
-                    <div class="btn-group" role="group">
+                <div class="col-lg-6 mx-auto">
+                    <div class="btn-group btn-group-sm">
                         <input type="radio" class="btn-check" id="1" name="tipocarro"><label class="btn btn-outline-primary" for="1">Compacto</label>
                         <input type="radio" class="btn-check" id="2" name="tipocarro"><label class="btn btn-outline-primary" for="2">Coupe</label>
                         <input type="radio" class="btn-check" id="3" name="tipocarro"><label class="btn btn-outline-primary" for="3">Utilitário</label>
@@ -24,27 +24,31 @@
                         <input type="radio" class="btn-check" id="12" name="tipocarro"><label class="btn btn-outline-primary" for="12">Blindados</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="radio" id="motor1" class="Vlrtotal" name="rdmotor[]" value="">Motor 1 &nbsp;
-                        <input type="radio" id="motor2" class="Vlrtotal" name="rdmotor[]" value="">Motor 2 &nbsp;
-                        <input type="radio" id="motor3" class="Vlrtotal" name="rdmotor[]" value="">Motor 3 <br>
-                        <input type="radio" id="lataria1" class="Vlrtotal" name="rdltr[]" value="">Lataria 1 &nbsp;
-                        <input type="radio" id="lataria2" class="Vlrtotal" name="rdltr[]" value="">Lataria 2 <br>
-                        <input type="radio" id="vidro" class="Vlrtotal" name="rdvidro[]" value="">Vidro &nbsp;
-                        <input type="radio" id="pneu" class="Vlrtotal" name="rdpneu[]" value="">Pneu &nbsp;
+                <div class="b-example-divider"><br></div>
+                <div class="col-lg-6 mx-auto">
+                    <div class="btn-group">
+                        <input type="radio" id="motor1" class="Vlrtotal btn-check" name="rdmotor" value="" autocomplete="off"><label class="btn btn-outline-secondary" for="motor1">Motor 1</label> 
+                        <input type="radio" id="motor2" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor2">Motor 2</label> 
+                        <input type="radio" id="motor3" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor3">Motor 3</label>
                     </div>
-                </div>
+                    <div class="btn-group">
+                        <input type="radio" id="lataria1" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria1">Lataria 1</label> 
+                        <input type="radio" id="lataria2" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="motolataria2r2">Lataria 2</label> 
+                    </div>
+                    <div class="btn-group">
+                        <input type="radio" id="vidro" class="Vlrtotal btn-check" name="rdvidro" value=""><label class="btn btn-outline-secondary" for="vidro">Vidro</label> 
+                        <input type="radio" id="pneu" class="Vlrtotal btn-check" name="rdpneu" value=""><label class="btn btn-outline-secondary" for="pneu">Pneu</label> 
+                    </div>
+                </div>   
                 <div class="row">
                     <div class="col">
                         <h3>Resultado</h3><input type="text" id="resultado" value="0">
                     </div>
                 </div>
-                
                 <br>
                 <br>
                 <button onclick="limpar()">Limpar</button>
-            </form>
+            </form> 
         </div>
         <script> 
             $(document).ready(function() {
@@ -184,8 +188,8 @@
                         }
                     });
                 });
-                $(".Vlrtotal").change(function() {
-                    var total = $('input[class="Vlrtotal"]:checked').get().reduce(function(tot, el) {
+                $(".Vlrtotal.btn-check").change(function() {
+                    var total = $('input[class="Vlrtotal btn-check"]:checked').get().reduce(function(tot, el) {
                     return tot + Number(el.value);
                     }, 0);
                     $('#resultado').val(total);
