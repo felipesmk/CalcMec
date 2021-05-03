@@ -460,6 +460,13 @@
     </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;background-color: #dddddd;width: 100% !important;min-width: 100% !important;height: 100% !important;">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			function limpar(){
+				for(i = 0; i < document.frm.elements.lenght;i++)
+					if (document.frm.elements[i].type == "radio")
+					document.frm.elements[i].removeAttribute("checked");
+                }
+		</script>
 <center>
 <table id="bodyTable" style="-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background-color:#dddddd; border-collapse:collapse !important; height:100% !important; margin:0; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:0; width:100% !important" align="center" border="0" cellpadding="0" cellspacing="0">
 	<tbody>
@@ -509,17 +516,19 @@
                                             <br>
                                             <div>
                                                 <div class="btn-group-vertical">
-                                                    <input type="radio" id="motor1" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor1">Motor 1</label> 
-                                                    <input type="radio" id="motor2" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor2">Motor 2</label> 
-                                                    <input type="radio" id="motor3" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor3">Motor 3</label>
+                                                    <input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Motor</label> 
+                                                    <input type="radio" id="motor1" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor1">Fumaça Branca</label> 
+                                                    <input type="radio" id="motor2" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor2">Fumaça Preta</label> 
                                                 </div>
                                                 <div class="btn-group-vertical">
-                                                    <input type="radio" id="lataria1" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria1">Lataria 1</label> 
-                                                    <input type="radio" id="lataria2" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria2">Lataria 2</label>
+													<input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Lataria</label> 
+                                                    <input type="radio" id="lataria1" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria1">Arranhões</label> 
+                                                    <input type="radio" id="lataria2" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria2">Partes Faltando</label>
                                                 </div>
                                                 <div class="btn-group-vertical">
-                                                    <input type="radio" id="vidro" class="Vlrtotal btn-check" name="rdvidro" value=""><label class="btn btn-outline-secondary" for="vidro">Vidro</label> 
-                                                    <input type="radio" id="pneu" class="Vlrtotal btn-check" name="rdpneu" value=""><label class="btn btn-outline-secondary" for="pneu">Pneu</label> 
+													<input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Outros</label> 
+                                                    <input type="radio" id="vidro" class="Vlrtotal btn-check" name="rdvidro" value=""><label class="btn btn-outline-secondary" for="vidro">Vidros</label> 
+                                                    <input type="radio" id="pneu" class="Vlrtotal btn-check" name="rdpneu" value=""><label class="btn btn-outline-secondary" for="pneu">Pneus</label> 
                                                 </div>
                                             </div>
                                             <br>
@@ -527,6 +536,10 @@
                                                 <span class="input-group-text" id="basic-addon1">Valor do reparo</span>
                                                 <input type="text" id="resultado" class="form-control">
                                                 <button onclick="limpar()" class="btn btn-warning">Limpar</button>
+                                            </div>
+											<div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">Carro enguiçado (Valor único a ser cobrado)</span>
+                                                <input type="text" id="enguicado" class="form-control">
                                             </div>
                                             <br>
                                             <br>
@@ -551,7 +564,8 @@
                 $("input[name='tipocarro']").change(function() {
                     console.log("detectou alteração");
                     var tipocarro;
-                    $("input[name='tipocarro']").each(function() {
+					$('#resultado').val(0);
+					$("input[name='tipocarro']").each(function() {
                         console.log("carregado each");
                         if ($(this).is(":checked")){
                             console.log("identificando checkbox");
@@ -562,7 +576,7 @@
                                     console.log("entrou case 1");
                                     $('#motor1').val(200);
                                     $('#motor2').val(350);
-                                    $('#motor3').val(500);
+                                    $('#enguicado').val(750);
                                     $('#lataria1').val(250);
                                     $('#lataria2').val(400);
                                     $('#vidro').val(200);
@@ -573,7 +587,7 @@
                                     console.log("entrou case 2");
                                     $('#motor1').val(400);
                                     $('#motor2').val(500);
-                                    $('#motor3').val(600);
+                                    $('#enguicado').val(900);
                                     $('#lataria1').val(400);
                                     $('#lataria2').val(600);
                                     $('#vidro').val(300);
@@ -583,7 +597,7 @@
                                     console.log("entrou case 3");
                                     $('#motor1').val(300);
                                     $('#motor2').val(400);
-                                    $('#motor3').val(500);
+                                    $('#enguicado').val(750);
                                     $('#lataria1').val(300);
                                     $('#lataria2').val(400);
                                     $('#vidro').val(200);
@@ -593,7 +607,7 @@
                                     console.log("entrou case 4");
                                     $('#motor1').val(300);
                                     $('#motor2').val(450);
-                                    $('#motor3').val(550);
+                                    $('#enguicado').val(825);
                                     $('#lataria1').val(300);
                                     $('#lataria2').val(400);
                                     $('#vidro').val(200);
@@ -603,7 +617,7 @@
                                     console.log("entrou case 5");
                                     $('#motor1').val(200);
                                     $('#motor2').val(400);
-                                    $('#motor3').val(650);
+                                    $('#enguicado').val(975);
                                     $('#lataria1').val(350);
                                     $('#lataria2').val(500);
                                     $('#vidro').val(250);
@@ -613,7 +627,7 @@
                                     console.log("entrou case 6");
                                     $('#motor1').val(300);
                                     $('#motor2').val(550);
-                                    $('#motor3').val(700);
+                                    $('#enguicado').val(1050);
                                     $('#lataria1').val(400);
                                     $('#lataria2').val(800);
                                     $('#vidro').val(350);
@@ -623,7 +637,7 @@
                                     console.log("entrou case 7");
                                     $('#motor1').val(200);
                                     $('#motor2').val(600);
-                                    $('#motor3').val(800);
+                                    $('#enguicado').val(1200);
                                     $('#lataria1').val(500);
                                     $('#lataria2').val(750);
                                     $('#vidro').val(400);
@@ -633,7 +647,7 @@
                                     console.log("entrou case 8");
                                     $('#motor1').val(300);
                                     $('#motor2').val(600);
-                                    $('#motor3').val(900);
+                                    $('#enguicado').val(1350);
                                     $('#lataria1').val(600);
                                     $('#lataria2').val(800);
                                     $('#vidro').val(400);
@@ -643,7 +657,7 @@
                                     console.log("entrou case 9");
                                     $('#motor1').val(800);
                                     $('#motor2').val(1300);
-                                    $('#motor3').val(2200);
+                                    $('#enguicado').val(3300);
                                     $('#lataria1').val(800);
                                     $('#lataria2').val(1350);
                                     $('#vidro').val(800);
@@ -653,7 +667,7 @@
                                     console.log("entrou case 10");
                                     $('#motor1').val(1500);
                                     $('#motor2').val(2000);
-                                    $('#motor3').val(2500);
+                                    $('#enguicado').val(3750);
                                     $('#lataria1').val(1300);
                                     $('#lataria2').val(1900);
                                     $('#vidro').val(1200);
@@ -663,7 +677,7 @@
                                     console.log("entrou case 11");
                                     $('#motor1').val(300);
                                     $('#motor2').val(650);
-                                    $('#motor3').val(1000);
+                                    $('#enguicado').val(1500);
                                     $('#lataria1').val(500);
                                     $('#lataria2').val(0);
                                     $('#vidro').val(0);
@@ -673,7 +687,7 @@
                                     console.log("entrou case 12");
                                     $('#motor1').val(600);
                                     $('#motor2').val(850);
-                                    $('#motor3').val(1200);
+                                    $('#enguicado').val(1800);
                                     $('#lataria1').val(1000);
                                     $('#lataria2').val(1600);
                                     $('#vidro').val(1500);
@@ -689,11 +703,6 @@
                     }, 0);
                     $('#resultado').val(total);
                 });
-                function limpar(){
-                    for(i = 0; i < document.frm.elements.lenght;i++)
-                        if (document.frm.elements[i].type == "checkbox")
-                            document.frm.elements[i].removeAttribute("checked");
-                }
             });
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
