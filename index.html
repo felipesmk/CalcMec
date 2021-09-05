@@ -527,20 +527,20 @@
                                                 </div>
                                                 <div class="btn-group-vertical">
 													<input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Outros</label> 
-                                                    <input type="radio" id="vidro" class="Vlrtotal btn-check" name="rdvidro" value=""><label class="btn btn-outline-secondary" for="vidro">Vidros</label> 
+                                                    <input type="radio" id="reboque" class="Vlrtotal btn-check" name="rdreboque" value=""><label class="btn btn-outline-secondary" for="reboque">Reboque</label> 
                                                     <input type="radio" id="pneu" class="Vlrtotal btn-check" name="rdpneu" value=""><label class="btn btn-outline-secondary" for="pneu">Pneus</label> 
                                                 </div>
                                             </div>
                                             <br>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Valor do reparo</span>
+                                                <span class="input-group-text" id="basic-addon1">Valor do serviço</span>
                                                 <input type="text" id="resultado" class="form-control">
                                                 <button onclick="limpar()" class="btn btn-warning">Limpar</button>
                                             </div>
-											<div class="input-group mb-3">
+											<!--<div class="input-group mb-3">
                                                 <span class="input-group-text" id="basic-addon1">Carro enguiçado (Valor único a ser cobrado)</span>
                                                 <input type="text" id="enguicado" class="form-control">
-                                            </div>
+                                            </div>-->
                                             <br>
                                             <br>
                                             
@@ -576,122 +576,122 @@
                                     console.log("entrou case 1");
                                     $('#motor1').val(200);
                                     $('#motor2').val(350);
-                                    $('#enguicado').val(750);
-                                    $('#lataria1').val(250);
-                                    $('#lataria2').val(400);
-                                    $('#vidro').val(200);
-                                    $('#pneu').val(150);
+                                    $('#lataria1').val(350);
+                                    $('#lataria2').val(500);
+                                    $('#reboque').val(250);
+									$('#pneu').val(150);
+									// $('#enguicado').val(750);
                                     console.log("escreveu case 1");
                                     break;
                                 case "2":
                                     console.log("entrou case 2");
                                     $('#motor1').val(400);
                                     $('#motor2').val(500);
-                                    $('#enguicado').val(900);
-                                    $('#lataria1').val(400);
-                                    $('#lataria2').val(600);
-                                    $('#vidro').val(300);
+                                    $('#lataria1').val(550);
+                                    $('#lataria2').val(750);
+                                    $('#reboque').val(250);
                                     $('#pneu').val(250);
+									// $('#enguicado').val(900);
                                     break;
                                 case "3":
                                     console.log("entrou case 3");
                                     $('#motor1').val(300);
                                     $('#motor2').val(400);
-                                    $('#enguicado').val(750);
-                                    $('#lataria1').val(300);
-                                    $('#lataria2').val(400);
-                                    $('#vidro').val(200);
+                                    $('#lataria1').val(400);
+                                    $('#lataria2').val(500);
+                                    $('#reboque').val(250);
                                     $('#pneu').val(150);
+									// $('#enguicado').val(750);
                                     break;
                                 case "4":
                                     console.log("entrou case 4");
                                     $('#motor1').val(300);
                                     $('#motor2').val(450);
-                                    $('#enguicado').val(825);
-                                    $('#lataria1').val(300);
-                                    $('#lataria2').val(400);
-                                    $('#vidro').val(200);
+                                    $('#lataria1').val(400);
+                                    $('#lataria2').val(500);
+                                    $('#reboque').val(500);
                                     $('#pneu').val(200);
+									// $('#enguicado').val(825);
                                     break;
                                 case "5":
                                     console.log("entrou case 5");
                                     $('#motor1').val(200);
                                     $('#motor2').val(400);
-                                    $('#enguicado').val(975);
-                                    $('#lataria1').val(350);
-                                    $('#lataria2').val(500);
-                                    $('#vidro').val(250);
+                                    $('#lataria1').val(475);
+                                    $('#lataria2').val(625);
+                                    $('#reboque').val(500);
                                     $('#pneu').val(300);
+									// $('#enguicado').val(975);
                                     break;
                                 case "6":
                                     console.log("entrou case 6");
                                     $('#motor1').val(300);
                                     $('#motor2').val(550);
-                                    $('#enguicado').val(1050);
-                                    $('#lataria1').val(400);
-                                    $('#lataria2').val(800);
-                                    $('#vidro').val(350);
+                                    $('#lataria1').val(575);
+                                    $('#lataria2').val(975);
+                                    $('#reboque').val(500);
                                     $('#pneu').val(300);
+									// $('#enguicado').val(1050);
                                     break;
                                 case "7":
                                     console.log("entrou case 7");
                                     $('#motor1').val(200);
                                     $('#motor2').val(600);
-                                    $('#enguicado').val(1200);
-                                    $('#lataria1').val(500);
-                                    $('#lataria2').val(750);
-                                    $('#vidro').val(400);
+                                    $('#lataria1').val(700);
+                                    $('#lataria2').val(950);
+                                    $('#reboque').val(500);
                                     $('#pneu').val(300);
+									// $('#enguicado').val(1200);
                                     break;
                                 case "8":
                                     console.log("entrou case 8");
                                     $('#motor1').val(300);
                                     $('#motor2').val(600);
-                                    $('#enguicado').val(1350);
-                                    $('#lataria1').val(600);
-                                    $('#lataria2').val(800);
-                                    $('#vidro').val(400);
+                                    $('#lataria1').val(800);
+                                    $('#lataria2').val(1000);
+                                    $('#reboque').val(750);
                                     $('#pneu').val(400);
+									// $('#enguicado').val(1350);
                                     break;
                                 case "9":
                                     console.log("entrou case 9");
                                     $('#motor1').val(800);
                                     $('#motor2').val(1300);
-                                    $('#enguicado').val(3300);
-                                    $('#lataria1').val(800);
-                                    $('#lataria2').val(1350);
-                                    $('#vidro').val(800);
+                                    $('#lataria1').val(1200);
+                                    $('#lataria2').val(1750);
+                                    $('#reboque').val(750);
                                     $('#pneu').val(650);
+									// $('#enguicado').val(3300);
                                     break;
                                 case "10":
                                     console.log("entrou case 10");
                                     $('#motor1').val(1500);
                                     $('#motor2').val(2000);
-                                    $('#enguicado').val(3750);
-                                    $('#lataria1').val(1300);
-                                    $('#lataria2').val(1900);
-                                    $('#vidro').val(1200);
+                                    $('#lataria1').val(1900);
+                                    $('#lataria2').val(2500);
+                                    $('#reboque').val(750);
                                     $('#pneu').val(600);
+									// $('#enguicado').val(3750);
                                     break;
                                 case "11":
                                     console.log("entrou case 11");
                                     $('#motor1').val(300);
                                     $('#motor2').val(650);
-                                    $('#enguicado').val(1500);
                                     $('#lataria1').val(500);
                                     $('#lataria2').val(0);
-                                    $('#vidro').val(0);
+                                    $('#reboque').val(250);
                                     $('#pneu').val(300);
+									// $('#enguicado').val(1500);
                                     break;
                                 case "12":
                                     console.log("entrou case 12");
                                     $('#motor1').val(600);
                                     $('#motor2').val(850);
-                                    $('#enguicado').val(1800);
-                                    $('#lataria1').val(1000);
-                                    $('#lataria2').val(1600);
-                                    $('#vidro').val(1500);
-                                    $('#pneu').val(750);
+                                    $('#lataria1').val(1750);
+                                    $('#lataria2').val(2350);
+                                    $('#reboque').val(750);
+                                    $('#pneu').val(700);
+									// $('#enguicado').val(1800);
                                     break;
                             }
                         }
