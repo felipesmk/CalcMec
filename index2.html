@@ -1,0 +1,710 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+	<head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--[if gte mso 9]><xml>
+		 <o:OfficeDocumentSettings>
+		  <o:AllowPNG/>
+		  <o:PixelsPerInch>96</o:PixelsPerInch>
+		 </o:OfficeDocumentSettings>
+		</xml><![endif]-->
+        <style type="text/css">
+			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			#bodyCell{padding:20px;}
+			#templateContainer{width:600px;}
+
+			/* ========== Page Styles ========== */
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			#bodyTable{
+				/*@editable*/ background-color:#dddddd !important;
+			}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			#bodyCell{
+				/*@editable*/ background-color:#dddddd !important;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ background-color:#dddddd;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1{
+				/*@editable*/ color:#5a9cb4;
+				display:block;
+				/*@editable*/ font-size:08px;
+				/*@editable*/ font-family:open sans,open sans,trebuchet ms,arial,helvetica,sans-serif !important;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:center;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2{
+				/*@editable*/ color:#167297 !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3{
+				/*@editable*/ color:#606060 !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4{
+				/*@editable*/ color:#808080 !important;
+				display:block;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/* ========== Header Styles ========== */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color and bottom border for your email's preheader area.
+			* @theme header
+			*/
+			#templatePreheader {
+			    background-color: #ffffff;
+			    border-bottom: medium none;
+			}
+			#templatePreheader2 {
+			    background-color: #01729A;
+			    border-bottom: medium none;
+			}
+
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent{
+				/*@editable*/ color:#606060!important;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#ffffff !important;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and borders for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#F4F4F4;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding-top:0;
+				/*@editable*/ padding-right:0;
+				/*@editable*/ padding-bottom:0;
+				/*@editable*/ padding-left:0;
+				/*@editable*/ text-align:left;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+
+			/* ========== Body Styles ========== */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color and borders for your email's body area.
+			*/
+			#templateBody {
+				background-color: #ffffff;
+				}
+
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:15px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none!important;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+				max-width:560px;
+			}
+
+			/* ========== Footer Styles ========== */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and borders for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter {
+			    background-color: #01729A;
+			   
+			}
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent{
+				/*@editable*/ color:#ffffff;
+				/*@editable*/ font-family:Helvetica, sans-serif;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+				/*@editable*/ color:#ffffff!important;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:none;
+			}
+
+			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+				/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+				#bodyCell{padding:10px !important;}
+
+				/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+				/* ======== Page Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section template width
+				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+				*/
+				#templateContainer{
+					max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 1
+				* @tip Make the first-level headings larger in size for better readability on small screens.
+				*/
+				h1{
+					/*@editable*/ font-size:26px;
+					/*@editable*/ font-family:open sans,open sans,trebuchet ms,arial,helvetica,sans-serif !important;
+					/*@editable*/ line-height:100%;
+					color: #5a9cb4;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 2
+				* @tip Make the second-level headings larger in size for better readability on small screens.
+				*/
+				h2{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:100% !important;
+					color: #167297!important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 3
+				* @tip Make the third-level headings larger in size for better readability on small screens.
+				*/
+				h3{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:100% !important;
+
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 4
+				* @tip Make the fourth-level headings larger in size for better readability on small screens.
+				*/
+				h4{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/* ======== Header Styles ======== */
+
+				#templatePreheader{} /* Hide the template preheader to save space */
+				.preheader02{
+					display: none;
+				}
+				/**
+				* @tab Mobile Styles
+				* @section header image
+				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				#headerImage{
+					height:auto !important;
+					/*@editable*/ max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section header text
+				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.headerContent{
+					/*@editable*/ font-size:10px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Body Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section body image
+				* @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				#bodyImage{
+					height:auto !important;
+					/*@editable*/ max-width:560px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.bodyContent{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:125% !important;
+
+				}
+
+				/* ======== Footer Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section footer text
+				* @tip Make the body content text larger in size for better readability on small screens.
+				*/
+				.footerContent{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:115% !important;
+				}
+
+				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+			}
+		</style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;background-color: #dddddd;width: 100% !important;min-width: 100% !important;height: 100% !important;">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			function limpar(){
+				for(i = 0; i < document.frm.elements.lenght;i++)
+					if (document.frm.elements[i].type == "radio")
+					document.frm.elements[i].removeAttribute("checked");
+                }
+		</script>
+<center>
+<table id="bodyTable" style="-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background-color:#dddddd; border-collapse:collapse !important; height:100% !important; margin:0; mso-table-lspace:0pt; mso-table-rspace:0pt; padding:0; width:100% !important" align="center" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td id="bodyCell" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;margin: 0;padding: 10px !important;height: 100% !important;width: 100% !important;" align="center" valign="top"><!-- BEGIN TEMPLATE // -->
+			<table id="templateContainer" style="-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background-color:#FFFFFF; border-collapse:collapse !important; max-width:600px !important; mso-table-lspace:0pt; mso-table-rspace:0pt; width:600px" align="center" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td class="bodyContent" pardot-region="body_content" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #FFFFFF; font-family: 'open sans', Open Sans, Trebuchet MS, Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; text-align: left; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;" align="center" valign="top"><!-- BEGIN PREHEADER // -->
+						<!-- // END PREHEADER --></td>
+					</tr>
+					<tr>
+						<td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" align="center" valign="top"><!-- BEGIN HEADER // -->
+						<!-- // END HEADER --></td>
+					</tr>
+					<tr>
+						<td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" align="center" valign="top"><!-- BEGIN BODY // -->
+						<table style="height:40px; width:600px" align="center" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td><span style="text-align:center"><!--<a href="http://aristotle.com/data/datasolutions/" target="_blank"><img alt="" src="http://salesforcedev.aristotle.com/imgs/blank_header.png" style="border-style:solid; border-width:0px" height="100" border="0" width="600"></a>--></span></td>
+								</tr>
+							</tbody>
+						</table>
+						<table id="templateBody" style="-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; background-color:#ffffff; border-collapse:collapse !important; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td class="bodyContent" mc:edit="body_content01" pardot-data="link-underline:none;" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-family:open sans,open sans,trebuchet ms,arial,helvetica,sans-serif !important; font-size:15px !important; line-height:135% !important;padding-top: 2px;padding-right: 20px;padding-bottom: 20px;padding-left: 30px;text-align: center;line-height: 150% !important;" valign="top">
+                                        <span style="font-family:open sans,open sans,trebuchet ms,arial,helvetica,sans-serif !important; font-size:20px !important; font-weight: 700 !important; line-height:100% !important;">CALCULADORA DOS MEC</span>
+									<h4 style="font-size: 14px; font-style: regular; font-weight: normal; line-height: 14px; margin: 0px; padding-bottom: 0px; color: rgb(128, 128, 128) !important;">&nbsp;</h4><br>
+									<span style="font-family:open sans,open sans,trebuchet ms,arial,helvetica,sans-serif !important; font-size:15px !important; line-height:135% !important;">
+                                        <form id="frm">
+                                            <div class="text-center px-5">
+                                                <input type="radio" class="btn-check" id="1" name="tipocarro"><label class="btn btn-outline-primary" for="1">Compacto</label>
+                                                <input type="radio" class="btn-check" id="2" name="tipocarro"><label class="btn btn-outline-primary" for="2">Coupe</label>
+                                                <input type="radio" class="btn-check" id="3" name="tipocarro"><label class="btn btn-outline-primary" for="3">Utilitário</label>
+                                                <input type="radio" class="btn-check" id="4" name="tipocarro"><label class="btn btn-outline-primary" for="4">Sedan</label>
+                                                <input type="radio" class="btn-check" id="5" name="tipocarro"><label class="btn btn-outline-primary" for="5">Offroad</label>
+                                                <input type="radio" class="btn-check" id="6" name="tipocarro"><label class="btn btn-outline-primary" for="6">SUV</label>
+                                                <input type="radio" class="btn-check" id="7" name="tipocarro"><label class="btn btn-outline-primary" for="7">Muscle</label>
+                                                <input type="radio" class="btn-check" id="8" name="tipocarro"><label class="btn btn-outline-primary" for="8">Esportivo</label>
+                                                <input type="radio" class="btn-check" id="9" name="tipocarro"><label class="btn btn-outline-primary" for="9">Clássico</label>
+                                                <input type="radio" class="btn-check" id="10" name="tipocarro"><label class="btn btn-outline-primary" for="10">Super</label>
+                                                <input type="radio" class="btn-check" id="11" name="tipocarro"><label class="btn btn-outline-primary" for="11">Motos</label>
+                                                <input type="radio" class="btn-check" id="12" name="tipocarro"><label class="btn btn-outline-primary" for="12">Blindados</label>
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <div class="btn-group-vertical">
+                                                    <input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Motor</label> 
+                                                    <input type="radio" id="motor1" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor1">Fumaça Branca</label> 
+                                                    <input type="radio" id="motor2" class="Vlrtotal btn-check" name="rdmotor" value=""><label class="btn btn-outline-secondary" for="motor2">Fumaça Preta</label> 
+                                                </div>
+                                                <div class="btn-group-vertical">
+													<input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Lataria</label> 
+                                                    <input type="radio" id="lataria1" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria1">Arranhões</label> 
+                                                    <input type="radio" id="lataria2" class="Vlrtotal btn-check" name="rdltr" value=""><label class="btn btn-outline-secondary" for="lataria2">Partes Faltando</label>
+                                                </div>
+                                                <div class="btn-group-vertical">
+													<input type="radio" id="motortitulo" class="btn-check" disabled><label class="btn btn-outline-secondary" for="motortitulo">Outros</label> 
+                                                    <input type="radio" id="vidro" class="Vlrtotal btn-check" name="rdvidro" value=""><label class="btn btn-outline-secondary" for="vidro">Vidros</label> 
+                                                    <input type="radio" id="pneu" class="Vlrtotal btn-check" name="rdpneu" value=""><label class="btn btn-outline-secondary" for="pneu">Pneus</label> 
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">Valor do reparo</span>
+                                                <input type="text" id="resultado" class="form-control">
+                                                <button onclick="limpar()" class="btn btn-warning">Limpar</button>
+                                            </div>
+											<div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">Carro enguiçado (Valor único a ser cobrado)</span>
+                                                <input type="text" id="enguicado" class="form-control">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            
+                                        </form>
+                                    </span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // END BODY -->
+            </td></tr>
+					</tbody></table></td></tr>
+							</tbody>
+						</table>
+						<!-- // END FOOTER -->
+			<!-- // END TEMPLATE -->
+</center>
+<script> 
+            $(document).ready(function() {
+                console.log("pronto");
+                $("input[name='tipocarro']").change(function() {
+                    console.log("detectou alteração");
+                    var tipocarro;
+					$('#resultado').val(0);
+					$("input[name='tipocarro']").each(function() {
+                        console.log("carregado each");
+                        if ($(this).is(":checked")){
+                            console.log("identificando checkbox");
+                            tipocarro = $(this).prop("id");
+                            console.log(tipocarro);
+                            switch(tipocarro) {
+                                case "1":
+                                    console.log("entrou case 1");
+                                    $('#motor1').val(200);
+                                    $('#motor2').val(350);
+                                    $('#enguicado').val(750);
+                                    $('#lataria1').val(250);
+                                    $('#lataria2').val(400);
+                                    $('#vidro').val(200);
+                                    $('#pneu').val(150);
+                                    console.log("escreveu case 1");
+                                    break;
+                                case "2":
+                                    console.log("entrou case 2");
+                                    $('#motor1').val(400);
+                                    $('#motor2').val(500);
+                                    $('#enguicado').val(900);
+                                    $('#lataria1').val(400);
+                                    $('#lataria2').val(600);
+                                    $('#vidro').val(300);
+                                    $('#pneu').val(250);
+                                    break;
+                                case "3":
+                                    console.log("entrou case 3");
+                                    $('#motor1').val(300);
+                                    $('#motor2').val(400);
+                                    $('#enguicado').val(750);
+                                    $('#lataria1').val(300);
+                                    $('#lataria2').val(400);
+                                    $('#vidro').val(200);
+                                    $('#pneu').val(150);
+                                    break;
+                                case "4":
+                                    console.log("entrou case 4");
+                                    $('#motor1').val(300);
+                                    $('#motor2').val(450);
+                                    $('#enguicado').val(825);
+                                    $('#lataria1').val(300);
+                                    $('#lataria2').val(400);
+                                    $('#vidro').val(200);
+                                    $('#pneu').val(200);
+                                    break;
+                                case "5":
+                                    console.log("entrou case 5");
+                                    $('#motor1').val(200);
+                                    $('#motor2').val(400);
+                                    $('#enguicado').val(975);
+                                    $('#lataria1').val(350);
+                                    $('#lataria2').val(500);
+                                    $('#vidro').val(250);
+                                    $('#pneu').val(300);
+                                    break;
+                                case "6":
+                                    console.log("entrou case 6");
+                                    $('#motor1').val(300);
+                                    $('#motor2').val(550);
+                                    $('#enguicado').val(1050);
+                                    $('#lataria1').val(400);
+                                    $('#lataria2').val(800);
+                                    $('#vidro').val(350);
+                                    $('#pneu').val(300);
+                                    break;
+                                case "7":
+                                    console.log("entrou case 7");
+                                    $('#motor1').val(200);
+                                    $('#motor2').val(600);
+                                    $('#enguicado').val(1200);
+                                    $('#lataria1').val(500);
+                                    $('#lataria2').val(750);
+                                    $('#vidro').val(400);
+                                    $('#pneu').val(300);
+                                    break;
+                                case "8":
+                                    console.log("entrou case 8");
+                                    $('#motor1').val(300);
+                                    $('#motor2').val(600);
+                                    $('#enguicado').val(1350);
+                                    $('#lataria1').val(600);
+                                    $('#lataria2').val(800);
+                                    $('#vidro').val(400);
+                                    $('#pneu').val(400);
+                                    break;
+                                case "9":
+                                    console.log("entrou case 9");
+                                    $('#motor1').val(800);
+                                    $('#motor2').val(1300);
+                                    $('#enguicado').val(3300);
+                                    $('#lataria1').val(800);
+                                    $('#lataria2').val(1350);
+                                    $('#vidro').val(800);
+                                    $('#pneu').val(650);
+                                    break;
+                                case "10":
+                                    console.log("entrou case 10");
+                                    $('#motor1').val(1500);
+                                    $('#motor2').val(2000);
+                                    $('#enguicado').val(3750);
+                                    $('#lataria1').val(1300);
+                                    $('#lataria2').val(1900);
+                                    $('#vidro').val(1200);
+                                    $('#pneu').val(600);
+                                    break;
+                                case "11":
+                                    console.log("entrou case 11");
+                                    $('#motor1').val(300);
+                                    $('#motor2').val(650);
+                                    $('#enguicado').val(1500);
+                                    $('#lataria1').val(500);
+                                    $('#lataria2').val(0);
+                                    $('#vidro').val(0);
+                                    $('#pneu').val(300);
+                                    break;
+                                case "12":
+                                    console.log("entrou case 12");
+                                    $('#motor1').val(600);
+                                    $('#motor2').val(850);
+                                    $('#enguicado').val(1800);
+                                    $('#lataria1').val(1000);
+                                    $('#lataria2').val(1600);
+                                    $('#vidro').val(1500);
+                                    $('#pneu').val(750);
+                                    break;
+                            }
+                        }
+                    });
+                });
+                $(".Vlrtotal.btn-check").change(function() {
+                    var total = $('input[class="Vlrtotal btn-check"]:checked').get().reduce(function(tot, el) {
+                    return tot + Number(el.value);
+                    }, 0);
+                    $('#resultado').val(total);
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
